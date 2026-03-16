@@ -53,7 +53,7 @@ const popularCities = [
 function generateRandomCities() {
     // Pick 5 random unique cities
     const shuffled = [...popularCities].sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, 4);
+    const selected = shuffled.slice(0, 5);
     
     quickSelectContainer.innerHTML = '';
     selected.forEach(city => {
