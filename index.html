@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Weather App</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="app-body">
+    <div class="glass-container">
+        <!-- Search Bar -->
+        <header class="search-section">
+            <input type="text" id="city-input" placeholder="Search for a city..." aria-label="City search">
+            <button id="search-btn" aria-label="Search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </header>
+
+        <!-- Quick Select Locations -->
+        <nav class="quick-select">
+            <button class="quick-btn" data-city="Tangier">Tangier</button>
+            <button class="quick-btn" data-city="Mexico City">Mexico City</button>
+            <button class="quick-btn" data-city="London">London</button>
+            <button class="quick-btn" data-city="Tokyo">Tokyo</button>
+        </nav>
+
+        <!-- Loading & Error States -->
+        <div id="loader" class="loader hidden"></div>
+        <div id="error-message" class="error hidden">City not found. Please try again.</div>
+
+        <!-- Main Weather Display -->
+        <main id="weather-main" class="weather-main hidden">
+            <div class="weather-current">
+                <h1 id="city-name" class="city-name">--</h1>
+                <p id="weather-desc" class="weather-desc">--</p>
+                
+                <div class="temp-container">
+                    <img id="weather-icon" src="" alt="Weather Icon" class="weather-icon hidden">
+                    <h2 id="temperature" class="temperature">--°C</h2>
+                </div>
+                
+                <div class="weather-details">
+                    <div class="detail">
+                        <span class="label">Humidity</span>
+                        <span id="humidity" class="value">--%</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Wind Speed</span>
+                        <span id="wind-speed" class="value">-- m/s</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5-Day Forecast -->
+            <section class="forecast-section">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast-container" class="forecast-grid">
+                    <!-- Forecast items injected via JavaScript -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
