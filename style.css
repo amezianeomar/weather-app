@@ -397,6 +397,21 @@ body {
     color: var(--text-secondary);
 }
 
+/* Developer Signature */
+.app-signature {
+    text-align: center;
+    padding: 10px 0 30px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+    animation: fadeIn 1s ease;
+}
+
+.app-signature span {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
 /* ==========================================================================
    Desktop / Tablet Dashboard Layout (macOS / iPad Style)
    ========================================================================== */
