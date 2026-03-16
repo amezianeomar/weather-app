@@ -11,4 +11,4 @@ A premium, responsive weather application offering an Apple iOS-level user exper
 
 ---
 > **Designed & Developed by Ameziane Omar** 👨‍💻
-*To view my other projects, visit my [GitHub Profile](https://github.com/amezianeomar).*
+*To view my other projects, visit my [Portfolio](https://portfolio-45d240.gitlab.io/).*
