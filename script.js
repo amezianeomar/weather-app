@@ -2,7 +2,7 @@
 // Weather Application - Main Logic 
 // -------------------------------------------------------------
 
-const API_KEY = '370a02ef50e77ce84bb52da2eee961f4';
+const API_KEY = 'd8044e536e7cb8b3baf6e731d1fbf071';
 const DEFAULT_CITY = 'Tangier';
 
 // DOM Element Selectors
